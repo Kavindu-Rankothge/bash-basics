@@ -41,3 +41,20 @@ if [[ "${string_value3}" == *"world"* ]]; then
 else
   echo "The string does not contain 'world'."
 fi
+
+# I have an int var x. if x more than 80 say A else pass.
+# Also number should be between 0 and 100.
+
+x=120
+
+if [[ "${x}" -gt 100 ]]; then
+  echo "Invalid - Number is greater than 100"
+elif [[ "${x}" -lt 0 ]]; then
+  echo "Invalid - Number is less thanb 0"
+elif [[ "${x}" -gt 80 ]]; then
+  echo "A Grade"
+elif [[ "${x}" -gt 50 ]]; then
+  echo "Pass Grade"
+else
+  echo "Fail"
+fi
